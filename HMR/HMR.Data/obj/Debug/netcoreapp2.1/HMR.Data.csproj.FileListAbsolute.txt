@@ -1,0 +1,8 @@
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\bin\Debug\netcoreapp2.1\HMR.Data.deps.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\bin\Debug\netcoreapp2.1\HMR.Data.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\obj\Debug\netcoreapp2.1\HMR.Data.csproj.CoreCompileInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\obj\Debug\netcoreapp2.1\HMR.Data.AssemblyInfoInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\obj\Debug\netcoreapp2.1\HMR.Data.AssemblyInfo.cs
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\bin\Debug\netcoreapp2.1\HMR.Data.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\obj\Debug\netcoreapp2.1\HMR.Data.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Data\obj\Debug\netcoreapp2.1\HMR.Data.pdb

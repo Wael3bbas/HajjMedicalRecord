@@ -1,0 +1,8 @@
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netcoreapp2.1\HMR.Business.deps.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netcoreapp2.1\HMR.Business.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netcoreapp2.1\HMR.Business.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netcoreapp2.1\HMR.Business.csproj.CoreCompileInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netcoreapp2.1\HMR.Business.AssemblyInfoInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netcoreapp2.1\HMR.Business.AssemblyInfo.cs
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netcoreapp2.1\HMR.Business.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netcoreapp2.1\HMR.Business.pdb
