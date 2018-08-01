@@ -4683,7 +4683,8 @@
           "Dapper": "1.50.5",
           "Dapper.Contrib": "1.50.5",
           "Dapper.Extension": "1.0.0.1",
-          "HMR.Core": "1.0.0"
+          "HMR.Core": "1.0.0",
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "bin/placeholder/HMR.Data.dll": {}

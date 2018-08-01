@@ -61,4 +61,7 @@
   <ItemGroup>
     <Build Include="MedicalRecords.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TestData.sql" />
+  </ItemGroup>
 </Project>

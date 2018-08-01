@@ -11,7 +11,7 @@ namespace HMR.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MedicalRecordController : ControllerBase
+    public class MedicalRecordController : BaseController
     {
         private readonly MedicalRecordBL _medicalRecordBL;
         public MedicalRecordController()
@@ -19,9 +19,11 @@ namespace HMR.Api.Controllers
             _medicalRecordBL = new MedicalRecordBL();
         }
 
-        public ProfileData Get(int hajjId)
+        [HttpGet("{id}")]
+        public ActionResult<ProfileData> Get(int id)
         {
-            return _medicalRecordBL.Get(hajjId);
+            var data =  _medicalRecordBL.Get(id);
+            return MyOk(data);
         }
     }
 }
