@@ -1,0 +1,9 @@
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netstandard2.0\HMR.Business.deps.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netstandard2.0\HMR.Business.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\bin\Debug\netstandard2.0\HMR.Business.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.csprojAssemblyReference.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.csproj.CoreCompileInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.AssemblyInfoInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.AssemblyInfo.cs
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Business\obj\Debug\netstandard2.0\HMR.Business.pdb

@@ -1,0 +1,14 @@
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Api.deps.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Api.runtimeconfig.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Api.runtimeconfig.dev.json
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Api.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Api.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.csprojAssemblyReference.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.csproj.CoreCompileInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.RazorAssemblyInfo.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.RazorAssemblyInfo.cs
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.AssemblyInfoInputs.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.AssemblyInfo.cs
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.RazorTargetAssemblyInfo.cache
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.pdb
