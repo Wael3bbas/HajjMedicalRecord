@@ -10,4 +10,8 @@
     <PackageReference Include="Dapper.Extension" Version="1.0.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HMR.Core\HMR.Core.csproj" />
+  </ItemGroup>
+
 </Project>

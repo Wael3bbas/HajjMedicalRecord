@@ -12,3 +12,10 @@ C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2
 C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.RazorTargetAssemblyInfo.cache
 C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.dll
 C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Business.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Core.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Data.dll
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Business.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Core.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\bin\Debug\netcoreapp2.1\HMR.Data.pdb
+C:\Users\MacWin\Source\Repos\HajjMedicalRecord\HMR\HMR.Api\obj\Debug\netcoreapp2.1\HMR.Api.csproj.CopyComplete

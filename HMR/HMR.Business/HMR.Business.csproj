@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HMR.Core\HMR.Core.csproj" />
+    <ProjectReference Include="..\HMR.Data\HMR.Data.csproj" />
+  </ItemGroup>
+
 </Project>

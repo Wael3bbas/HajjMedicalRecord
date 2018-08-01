@@ -1,10 +1,22 @@
-﻿using System;
+﻿using HMR.Core;
+using HMR.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace HMR.Business
 {
-    class MedicalRecordBL
+    public class MedicalRecordBL
     {
+        private readonly MedicalRecordDAL _repo;
+        public MedicalRecordBL()
+        {
+            _repo = new MedicalRecordDAL();
+        }
+
+        public ProfileData Get(int hajjId)
+        {
+            return _repo.Get(hajjId);
+        }
     }
 }
