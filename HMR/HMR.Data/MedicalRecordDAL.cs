@@ -1,14 +1,29 @@
-﻿using HMR.Core;
+﻿using Dapper;
+using HMR.Core;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Text;
 
 namespace HMR.Data
 {
-    public class MedicalRecordDAL
+    public class MedicalRecordDAL : DataBase
     {
         public ProfileData Get(int hajjId)
         {
+            var sql = @"SELECT  [Data]
+                      FROM [dbo].[MedicalRecords]
+                      WHERE [MedicalRecordId] = @MedicalRecordId";
+
+            using (Connection)
+            {
+                var data = Connection.QueryFirstOrDefault<string>(sql, new { MedicalRecordId = hajjId });
+                if (data != null)
+                    return JsonConvert.DeserializeObject<ProfileData>(data);
+
+            }
+            return null;
             return new ProfileData
             {
                 PersonalInfo = new PersonalInfo
