@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc.Formatters.Json;
 
 namespace HMR.Api
 {
@@ -44,7 +45,9 @@ namespace HMR.Api
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials());
+
             app.UseMvc();
+                //.AddJsonOptions(opt => opt.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
     }
 }

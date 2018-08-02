@@ -6,6 +6,15 @@ namespace HMR.Core
     {
         public int HajjId { get; set; }
 
-        public MedicalCase To => (MedicalCase)this;
+        public MedicalCase ToCase()
+        {
+            return new MedicalCase
+            {
+                Description = this.Description,
+                MedicalProcedures = this.MedicalProcedures,
+                Type = this.Type,
+                CreatedAt = DateTime.Now
+            };
+        }
     }
 }
