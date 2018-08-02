@@ -8,6 +8,6 @@ namespace HMR.Core
     {
         public PersonalInfo PersonalInfo { get; set; }
         public List<Disease> Diseases { get; set; }
-        public List<Contact> EmergancyConstacts { get; set; }
+        public List<Contact> EmergancyContacts { get; set; }
     }
 }

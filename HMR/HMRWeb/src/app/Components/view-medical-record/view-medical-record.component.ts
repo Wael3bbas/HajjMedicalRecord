@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MedicalRecordService } from '../../Services/medical-record.service';
+import { ProfileDataModel } from '../../Models/profile-data.model';
 
 @Component({
   selector: 'app-view-medical-record',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewMedicalRecordComponent implements OnInit {
 
-  constructor() { }
+  constructor(private medicalRecordService: MedicalRecordService) { }
+
+  patientId: number = 0;
+  patient: ProfileDataModel = new ProfileDataModel();
 
   ngOnInit() {
+
+    //medicalRecordService
+    this.medicalRecordService.ViewMedicalRecord(this.patientId).subscribe(
+      data => {
+        this.patient = <ProfileDataModel>(data);
+      },
+      err => {
+
+
+      });
+
   }
 
 }

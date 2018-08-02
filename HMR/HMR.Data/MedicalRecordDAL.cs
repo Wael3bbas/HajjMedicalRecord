@@ -57,7 +57,7 @@ namespace HMR.Data
                         }
                     }
                 },
-                EmergancyConstacts = new List<Contact>
+                EmergancyContacts = new List<Contact>
                  {
                      new Contact{ FullName =" Booking.com", Phone ="966545454200", Type ="Father"},
                      new Contact{ FullName =" aGODA.com", Phone ="966778899500", Type ="Sona"}
