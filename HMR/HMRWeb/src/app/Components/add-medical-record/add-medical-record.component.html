@@ -1,3 +1,170 @@
-<p>
-  add-medical-record works!
-</p>
+<h4 class="mb-3">Personal Information</h4>
+<div>
+  <form class="needs-validation" novalidate="">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" class="form-control" name="fullName" #fullName="ngModel" [(ngModel)]="patient.personalInfo.fullName">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Nationality</label>
+          <input type="text" class="form-control" name="nationality" #nationality="ngModel" [(ngModel)]="patient.personalInfo.nationality">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Pasport Number</label>
+          <input type="text" class="form-control" name="pasportNumber" #pasportNumber="ngModel" [(ngModel)]="patient.personalInfo.pasportNumber">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Gender</label>
+          <input type="text" class="form-control" name="gender" #gender="ngModel" [(ngModel)]="patient.personalInfo.gender">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Age</label>
+          <input type="text" class="form-control" name="Age" #Age="ngModel" [(ngModel)]="patient.personalInfo.age">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Blood Type</label>
+          <input type="text" class="form-control" name="bloodType" #bloodType="ngModel" [(ngModel)]="patient.personalInfo.bloodType">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" class="form-control" name="address" #address="ngModel" [(ngModel)]="patient.personalInfo.address">
+        </div>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+    <h4 class="mb-3">Diseases Information</h4>
+    <p-table [columns]="cols" [value]="patient.diseases" [paginator]="false" [loading]="loading">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th style="width: 30%">
+            Name
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Medicines
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td data-label="Name">
+            {{ rowData["name"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["description"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["medicines"] }}
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="emptymessage" let-col>
+        <tr>
+          <td style="text-align: center;" colspan="3">
+            No Records
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+
+    <hr class="mb-4">
+    <h4 class="mb-3">Emergancy Contacts</h4>
+    <p-table [columns]="cols" [value]="patient.emergancyContacts" [paginator]="false" [loading]="loading">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th style="width: 30%">
+            Type
+          </th>
+          <th>
+            FullName
+          </th>
+          <th style="width: 30%">
+            Phone
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td data-label="Name">
+            {{ rowData["type"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["fullName"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["phone"] }}
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="emptymessage" let-col>
+        <tr>
+          <td style="text-align: center;" colspan="3">
+            No Records
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <hr class="mb-4">
+    <h4 class="mb-3">Medical Cases</h4>
+    <p-table [columns]="cols" [value]="patient.cases" [paginator]="false" [loading]="loading">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th style="width: 30%">
+            Type
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            MedicalProcedures
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td data-label="Name">
+            {{ rowData["type"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["fullName"] }}
+          </td>
+          <td data-label="MedicalProcedures">
+            {{ rowData["medicalProcedures"] }}
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="emptymessage" let-col>
+        <tr>
+          <td style="text-align: center;" colspan="3">
+            No Records
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <hr class="mb-4">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+  </form>
+</div>
