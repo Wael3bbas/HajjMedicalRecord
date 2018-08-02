@@ -15,7 +15,7 @@ namespace HMR.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ProfileData> Get(int id)
+        public ActionResult<ProfileData> Get(string id)
         {
             var data =  _medicalRecordBL.Get(id);
             return Ok(data);
@@ -30,7 +30,7 @@ namespace HMR.Api.Controllers
         [HttpPost("AddCase")]
         public void AddCase(MedicalCaseCreateInput caseData)
         {
-            _medicalRecordBL.AddCase(caseData.HajjId, caseData.ToCase());
+            _medicalRecordBL.AddCase(caseData.ProfileCode, caseData.ToCase());
         }
     }
 }

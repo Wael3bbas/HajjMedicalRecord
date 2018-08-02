@@ -8,7 +8,6 @@ import { ProfileDataModel } from '../../Models/profile-data.model';
   styleUrls: ['./view-medical-record.component.css']
 })
 export class ViewMedicalRecordComponent implements OnInit {
-
   constructor(private medicalRecordService: MedicalRecordService) { }
 
   patientId: number = 0;

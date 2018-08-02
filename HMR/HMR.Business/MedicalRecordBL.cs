@@ -2,6 +2,7 @@
 using HMR.Data;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace HMR.Business
@@ -14,25 +15,35 @@ namespace HMR.Business
             _repo = new MedicalRecordDAL();
         }
 
-        public ProfileData Get(int hajjId)
+        public ProfileData Get(string profileCode)
         {
-            return _repo.Get(hajjId);
+            return _repo.Get(profileCode);
         }
 
         public void Create(ProfileData data)
         {
-            _repo.Create(data);
+            var profileCode = GenerateCode().ToString();
+            _repo.Create(profileCode, data);
+        }
+        private uint GenerateCode()
+        {
+            using (RNGCryptoServiceProvider rg = new RNGCryptoServiceProvider())
+            {
+                byte[] rno = new byte[8];
+                rg.GetBytes(rno);
+                return BitConverter.ToUInt32(rno, 0);
+            }
         }
 
-        public void AddCase(int hajjId, MedicalCase caseData)
+        public void AddCase(string profileCode, MedicalCase caseData)
         {
-            var hajjData = Get(hajjId);
+            var hajjData = Get(profileCode);
             if (hajjData.Cases == null)
                 hajjData.Cases = new List<MedicalCase>();
 
             hajjData.Cases.Add(caseData);
 
-            _repo.Update(hajjId, hajjData);
+            _repo.Update(profileCode, hajjData);
         }
     }
 }
