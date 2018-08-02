@@ -10,6 +10,8 @@ import { ListMedicalRecordsComponent } from './Components/list-medical-records/l
 import { AppRoutingModule } from './app-routing.module';
 import { MedicalRecordService } from './Services/medical-record.service';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { FormsModule } from '@angular/forms'; 
+
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     TableModule
   ],
   providers: [

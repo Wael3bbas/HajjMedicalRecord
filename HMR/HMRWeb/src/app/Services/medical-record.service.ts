@@ -11,13 +11,7 @@ export class MedicalRecordService {
 
   public ViewMedicalRecord(patientId: number) {
 
-    const headers = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-
-    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${patientId}`, headers);
+    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${patientId}`);
   }
 
   public ListMedicalRecord() {
