@@ -4,7 +4,7 @@ namespace HMR.Core
 {
     public class MedicalCaseCreateInput : MedicalCase
     {
-        public int HajjId { get; set; }
+        public string ProfileCode { get; set; }
 
         public MedicalCase ToCase()
         {
