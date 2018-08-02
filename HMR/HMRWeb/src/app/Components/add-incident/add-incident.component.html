@@ -1,0 +1,27 @@
+<h4 class="mb-3">New Incident</h4>
+<div>
+  <form class="needs-validation" novalidate="">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Hajj ID</label>
+          <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.hajjId">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" class="form-control" name="location" #nationality="ngModel" [(ngModel)]="incident.location">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="form-control" name="description" #nationality="ngModel" [(ngModel)]="incident.description">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

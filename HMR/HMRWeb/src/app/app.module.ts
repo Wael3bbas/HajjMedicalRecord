@@ -14,7 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './Components/footer/footer.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component';
-import { AddCaseComponent } from './add-case/add-case.component'; 
+import { AddCaseComponent } from './Components/add-case/add-case.component';
+import { AddIncidentComponent } from './Components/add-incident/add-incident.component';
+
 
 
 
@@ -27,7 +29,8 @@ import { AddCaseComponent } from './add-case/add-case.component';
     FooterComponent,
     LandingComponent,
     TopNavbarComponent,
-    AddCaseComponent
+    AddCaseComponent,
+    AddIncidentComponent
   ],
   imports: [
     BrowserModule,
