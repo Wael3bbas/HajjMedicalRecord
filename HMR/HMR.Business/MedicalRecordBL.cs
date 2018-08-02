@@ -18,5 +18,10 @@ namespace HMR.Business
         {
             return _repo.Get(hajjId);
         }
+
+        public void Create(ProfileData data)
+        {
+            _repo.Create(data);
+        }
     }
 }

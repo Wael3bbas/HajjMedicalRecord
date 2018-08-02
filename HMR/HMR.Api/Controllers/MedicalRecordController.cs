@@ -20,5 +20,11 @@ namespace HMR.Api.Controllers
             var data =  _medicalRecordBL.Get(id);
             return MyOk(data);
         }
+
+        [HttpPost]
+        public void Create(ProfileData data)
+        {
+            _medicalRecordBL.Create(data);
+        }
     }
 }
