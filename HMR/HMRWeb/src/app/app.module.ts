@@ -10,7 +10,10 @@ import { ListMedicalRecordsComponent } from './Components/list-medical-records/l
 import { AppRoutingModule } from './app-routing.module';
 import { MedicalRecordService } from './Services/medical-record.service';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './Components/footer/footer.component';
+import { LandingComponent } from './Components/landing/landing.component';
+import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component'; 
 
 
 
@@ -19,7 +22,10 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     AddMedicalRecordComponent,
     ViewMedicalRecordComponent,
-    ListMedicalRecordsComponent
+    ListMedicalRecordsComponent,
+    FooterComponent,
+    LandingComponent,
+    TopNavbarComponent
   ],
   imports: [
     BrowserModule,
