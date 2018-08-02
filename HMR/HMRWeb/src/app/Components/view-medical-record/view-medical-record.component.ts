@@ -14,8 +14,8 @@ export class ViewMedicalRecordComponent implements OnInit {
   patient: ProfileDataModel = new ProfileDataModel();
 
   ngOnInit() {
-    this.patientId = 1;
-    this.medicalRecordService.ViewMedicalRecord(7).subscribe(
+    this.patientId = 12345;
+    this.medicalRecordService.ViewMedicalRecord(12345).subscribe(
       data => {
         this.patient = <ProfileDataModel>(data);
       },

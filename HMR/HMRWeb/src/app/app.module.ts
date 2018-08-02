@@ -13,7 +13,10 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './Components/footer/footer.component';
 import { LandingComponent } from './Components/landing/landing.component';
-import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component'; 
+import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component';
+import { AddCaseComponent } from './Components/add-case/add-case.component';
+import { AddIncidentComponent } from './Components/add-incident/add-incident.component';
+
 
 
 
@@ -25,7 +28,9 @@ import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component
     ListMedicalRecordsComponent,
     FooterComponent,
     LandingComponent,
-    TopNavbarComponent
+    TopNavbarComponent,
+    AddCaseComponent,
+    AddIncidentComponent
   ],
   imports: [
     BrowserModule,
