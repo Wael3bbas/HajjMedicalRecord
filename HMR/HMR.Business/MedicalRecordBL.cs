@@ -32,7 +32,7 @@ namespace HMR.Business
 
             hajjData.Cases.Add(caseData);
 
-            _repo.AddCase(caseData);
+            _repo.Update(hajjId, hajjData);
         }
     }
 }

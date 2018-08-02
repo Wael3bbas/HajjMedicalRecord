@@ -26,11 +26,6 @@ namespace HMR.Data
             return null;
         }
 
-        public void AddCase(MedicalCase caseData)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Create(ProfileData data)
         {
             var dataSerialized = JsonConvert.SerializeObject(data);
@@ -49,17 +44,18 @@ namespace HMR.Data
         public void Update(int hajjId, ProfileData data)
         {
             var dataSerialized = JsonConvert.SerializeObject(data);
-            using (Connection)
+            using (var connection = new SqlConnection(Constants.ConnectionString))
             {
-                const string sql = 
+                var sql = 
                     @"Update [MedicalRecords] 
                         SET Data = @Data, Updated = @Updated
                         WHERE MedicalRecordId = @MedicalRecordId";
-                Connection.Execute(sql,
+                connection.Execute(sql,
                     new
                     {
                         Data = dataSerialized,
-                        Updated = DateTime.Now
+                        Updated = DateTime.Now,
+                        MedicalRecordId = hajjId
                     });
             }
         }

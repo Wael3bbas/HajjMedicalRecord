@@ -30,7 +30,7 @@ namespace HMR.Api.Controllers
         [HttpPost("AddCase")]
         public void AddCase(MedicalCaseCreateInput caseData)
         {
-            _medicalRecordBL.AddCase(caseData.HajjId, caseData.To);
+            _medicalRecordBL.AddCase(caseData.HajjId, caseData.ToCase());
         }
     }
 }
