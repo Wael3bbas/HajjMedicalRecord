@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileDataModel } from '../../Models/profile-data.model';
 import { MedicalRecordService } from '../../Services/medical-record.service';
+import { ActivatedRoute, Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-list-medical-records',
@@ -9,31 +10,19 @@ import { MedicalRecordService } from '../../Services/medical-record.service';
 })
 export class ListMedicalRecordsComponent implements OnInit {
 
-  constructor(private medicalRecordService: MedicalRecordService) { }
+  constructor(private route: ActivatedRoute,
+    private router: Router) { }
 
-  cols: any[] = [
-
-    { field: 'FullName', header: 'FullName' },
-    { field: 'Gender', header: 'Gender' },
-    { field: 'Nationality', header: 'Nationality' },
-    { field: 'PasportNumber', header: 'Pasport Number' },
-    { field: 'Age', header: 'Age' }
-  ];
-
-  patientId: number = 0;
+  hajjId: string = "";
   patients: ProfileDataModel[] = [];
 
   ngOnInit() {
 
-    //medicalRecordService
-    this.medicalRecordService.ListMedicalRecord().subscribe(
-      data => {
-        this.patients = <ProfileDataModel[]>(data);
-      },
-      err => {
+  }
 
-
-      });
+  search() {
+    this.router.navigate(['/View', this.hajjId]);
 
   }
+
 }

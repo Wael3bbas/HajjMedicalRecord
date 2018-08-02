@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavbarComponent implements OnInit {
 
+  hajjId: string = "";
+
   constructor() { }
 
   ngOnInit() {

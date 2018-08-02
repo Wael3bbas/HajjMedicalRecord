@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MedicalRecordService } from '../../Services/medical-record.service';
 import { ProfileDataModel } from '../../Models/profile-data.model';
+import { ActivatedRoute, Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-view-medical-record',
@@ -8,14 +9,17 @@ import { ProfileDataModel } from '../../Models/profile-data.model';
   styleUrls: ['./view-medical-record.component.css']
 })
 export class ViewMedicalRecordComponent implements OnInit {
-  constructor(private medicalRecordService: MedicalRecordService) { }
+  constructor(private medicalRecordService: MedicalRecordService, private route: ActivatedRoute,
+    private router: Router) { }
 
-  patientId: number = 0;
+  hajjId: string = "";
   patient: ProfileDataModel = new ProfileDataModel();
 
   ngOnInit() {
-    this.patientId = 12345;
-    this.medicalRecordService.ViewMedicalRecord(12345).subscribe(
+
+    this.hajjId = this.route.snapshot.paramMap.get('id') || "12345";
+
+    this.medicalRecordService.ViewMedicalRecord(this.hajjId).subscribe(
       data => {
         this.patient = <ProfileDataModel>(data);
       },

@@ -16,9 +16,7 @@ import { LandingComponent } from './Components/landing/landing.component';
 import { TopNavbarComponent } from './Components/top-navbar/top-navbar.component';
 import { AddCaseComponent } from './Components/add-case/add-case.component';
 import { AddIncidentComponent } from './Components/add-incident/add-incident.component';
-
-
-
+import { ListIncidentComponent } from './Components/list-incident/list-incident.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +28,8 @@ import { AddIncidentComponent } from './Components/add-incident/add-incident.com
     LandingComponent,
     TopNavbarComponent,
     AddCaseComponent,
-    AddIncidentComponent
+    AddIncidentComponent,
+    ListIncidentComponent
   ],
   imports: [
     BrowserModule,

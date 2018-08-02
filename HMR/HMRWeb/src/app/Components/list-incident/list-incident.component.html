@@ -1,0 +1,42 @@
+<h4 class="mb-3">Incidents</h4>
+<p-table [value]="incidents" [paginator]="false" [loading]="loading">
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th>
+        Hajj ID
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Location
+      </th>
+      <th>
+        Action
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      <td data-label="Hajj Id">
+        {{ rowData["hajjId"] }}
+      </td>
+      <td data-label="Description">
+        {{ rowData["description"] }}
+      </td>
+      <td data-label="Location">
+        {{ rowData["location"] }}
+      </td>
+      <td data-label=" View Records">
+        View Records
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage" let-col>
+    <tr>
+      <td style="text-align: center;" colspan="3">
+        No Records
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

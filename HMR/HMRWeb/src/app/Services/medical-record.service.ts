@@ -9,9 +9,9 @@ export class MedicalRecordService {
   constructor(private httpClient: HttpClient) {
   }
 
-  public ViewMedicalRecord(patientId: number) {
+  public ViewMedicalRecord(hajjId: string) {
 
-    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${patientId}`);
+    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${hajjId}`);
   }
 
   public ListMedicalRecord() {

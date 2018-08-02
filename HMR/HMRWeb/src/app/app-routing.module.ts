@@ -6,20 +6,16 @@ import { ListMedicalRecordsComponent } from './Components/list-medical-records/l
 import { AddMedicalRecordComponent } from './Components/add-medical-record/add-medical-record.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { AddIncidentComponent } from './Components/add-incident/add-incident.component';
+import { ListIncidentComponent } from './Components/list-incident/list-incident.component';
 
 const routes: Routes = [
 
     { path: '', component: LandingComponent },
     { path: 'Search', component: ListMedicalRecordsComponent, data: { breadcrumb: 'Search' } },
-    { path: 'View', component: ViewMedicalRecordComponent, data: { breadcrumb: 'View' } },
+    { path: 'View/:id', component: ViewMedicalRecordComponent, data: { breadcrumb: 'View' } },
     { path: 'Add', component: AddMedicalRecordComponent, data: { breadcrumb: 'Add' } },
     { path: 'AddIncident', component: AddIncidentComponent, data: { breadcrumb: 'Add' } },
-
-    // {
-    //     path: 'External', children: [
-    //         { path: 'ViewPayroll', component: ViewPayrollExternalComponent, data: { breadcrumb: 'View Payroll External' } },
-    //     ]
-    // }
+    { path: 'Incidents', component: ListIncidentComponent, data: { breadcrumb: 'Add' } },
 ];
 
 @NgModule({

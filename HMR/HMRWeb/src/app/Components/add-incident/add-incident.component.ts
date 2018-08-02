@@ -10,9 +10,12 @@ export class AddIncidentComponent implements OnInit {
 
   constructor() { }
 
-  incident = new IncidentModel();
+  selectedPosition: any;
+
+  incident: IncidentModel = new IncidentModel();
 
   ngOnInit() {
   }
+
 
 }

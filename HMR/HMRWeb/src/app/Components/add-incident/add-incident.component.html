@@ -1,17 +1,17 @@
 <h4 class="mb-3">New Incident</h4>
 <div>
-  <form class="needs-validation" novalidate="">
+  <form class="needs-validation" #f="ngForm" (ngSubmit)="onSubmit(GeneralForm.valid)">
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
           <label>Hajj ID</label>
-          <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.hajjId">
+          <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.HajjId">
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label>Location</label>
-          <input type="text" class="form-control" name="location" #nationality="ngModel" [(ngModel)]="incident.location">
+          <input type="text" class="form-control" name="location" #nationality="ngModel" [(ngModel)]="incident.Location">
         </div>
       </div>
     </div>
@@ -19,9 +19,15 @@
       <div class="col-md-12">
         <div class="form-group">
           <label>Description</label>
-          <input type="text" class="form-control" name="description" #nationality="ngModel" [(ngModel)]="incident.description">
+          <textarea class="autoExpand forumPost form-control" name="description" #description="ngModel" [(ngModel)]="incident.Description"
+            rows="4" data-min-rows="4" placeholder="Enter description here" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none; background: transparent !important;"></textarea>
         </div>
       </div>
+    </div>
+    <div class="row">
+
+      <a class="btn btn-lg btn-block btn-primary" routerLinkActive="active" routerLink="/">Submit</a>
+
     </div>
   </form>
 </div>
