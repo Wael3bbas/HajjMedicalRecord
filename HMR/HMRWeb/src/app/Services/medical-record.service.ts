@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ProfileDataModel } from '../Models/profile-data.model';
 import { environment } from '../../environments/environment';
 
@@ -10,12 +10,19 @@ export class MedicalRecordService {
   }
 
   public ViewMedicalRecord(patientId: number) {
-    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${patientId}` );
+
+    const headers = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    return this.httpClient.get<ProfileDataModel>(`${environment.ApiUrl}/MedicalRecord/${patientId}`, headers);
   }
 
   public ListMedicalRecord() {
 
-    return this.httpClient.get<ProfileDataModel[]>(`${environment.ApiUrl}/MedicalRecord/` );
+    return this.httpClient.get<ProfileDataModel[]>(`${environment.ApiUrl}/MedicalRecord/`);
   }
 
 

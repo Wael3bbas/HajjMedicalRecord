@@ -9,6 +9,7 @@ import { ViewMedicalRecordComponent } from './Components/view-medical-record/vie
 import { ListMedicalRecordsComponent } from './Components/list-medical-records/list-medical-records.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MedicalRecordService } from './Services/medical-record.service';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { MedicalRecordService } from './Services/medical-record.service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     TableModule
   ],

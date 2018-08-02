@@ -11,7 +11,7 @@ export class ViewMedicalRecordComponent implements OnInit {
 
   constructor(private medicalRecordService: MedicalRecordService) { }
 
-  patientId: number = 0;
+  patientId: number = 1;
   patient: ProfileDataModel = new ProfileDataModel();
 
   ngOnInit() {

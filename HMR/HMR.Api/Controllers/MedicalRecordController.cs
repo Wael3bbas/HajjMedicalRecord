@@ -18,7 +18,7 @@ namespace HMR.Api.Controllers
         public ActionResult<ProfileData> Get(int id)
         {
             var data =  _medicalRecordBL.Get(id);
-            return MyOk(data);
+            return Ok(data);
         }
 
         [HttpPost]
