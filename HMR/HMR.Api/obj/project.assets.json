@@ -12363,23 +12363,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\901188\\.nuget\\packages\\": {},
+    "C:\\Users\\MacWin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Api\\HMR.Api.csproj",
+      "projectUniqueName": "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Api\\HMR.Api.csproj",
       "projectName": "HMR.Api",
-      "projectPath": "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Api\\HMR.Api.csproj",
-      "packagesPath": "C:\\Users\\901188\\.nuget\\packages\\",
-      "outputPath": "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Api\\obj\\",
+      "projectPath": "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Api\\HMR.Api.csproj",
+      "packagesPath": "C:\\Users\\MacWin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\901188\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MacWin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12392,11 +12392,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Business\\HMR.Business.csproj": {
-              "projectPath": "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Business\\HMR.Business.csproj"
+            "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Business\\HMR.Business.csproj": {
+              "projectPath": "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Business\\HMR.Business.csproj"
             },
-            "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Core\\HMR.Core.csproj": {
-              "projectPath": "C:\\Hajj_Hackathon\\Code\\HMR\\HMR.Core\\HMR.Core.csproj"
+            "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Core\\HMR.Core.csproj": {
+              "projectPath": "C:\\Users\\MacWin\\Source\\Repos\\HajjMedicalRecord\\HMR\\HMR.Core\\HMR.Core.csproj"
             }
           }
         }

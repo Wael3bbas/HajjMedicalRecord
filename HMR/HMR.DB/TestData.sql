@@ -1,210 +1,129 @@
 ﻿USE [HMRDB]
 GO
-SET IDENTITY_INSERT [dbo].[MedicalRecords] ON 
+
+DELETE FROM [dbo].[MedicalRecords];
+Go
+
+INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES ( N'{
+    "personalInfo": {
+      "fullName": "Zimmerman Hunter",
+      "nationality": 6303,
+      "birthDate": "1979-11-23T12:25:15 -03:00",
+      "pasportNumber": "A9501207",
+      "Gender": "male",
+      "BloodType": "B-",
+      "Address": "712 Empire Boulevard, Glenville, Florida, 8707"
+    },
+    "diseases": [
+      {
+        "medicines": ["DATAGENE","ENTROPIX"],
+        "name": "Disease 11",
+        "description": "Disease 12 is redoculas"
+      },
+      {
+        "medicines": ["GRUPOLI","KIGGLE"],
+        "name": "Disease 9",
+        "description": "Disease 10 is redoculas"
+      }
+    ],
+    "emergancyConstacts": [
+      {
+        "Type": "Brother",
+        "fullName": "Sybil Flowers",
+        "phone": "+966 (917) 491-3998"
+      },
+      {
+        "Type": "Father",
+        "fullName": "Glenn Fulton",
+        "phone": "+966 (845) 505-2294"
+      },
+      {
+        "Type": "other",
+        "fullName": "Annabelle Walton",
+        "phone": "+966 (876) 491-2178"
+      }
+    ]
+  }', getdate(), NULL)
 GO
-INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) VALUES (1, N'{
-  "personalInfo": {
-    "fullName": "Kareem Uber Airbnb",
-    "nationality": "British",
-    "birthDate": "1976-12-12T00:00:00",
-    "pasportNumber":"A12344556",
-    "Gender":"Male",
-    "BloodType":"O+",
-    "Address":"Earth",
-  },
-  "diseases": [
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 01",
-          "description": "01 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 02",
-          "description": "01 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 03",
-          "description": "01 Description 03"
-        }
-      ],
-      "name": "Disease 01",
-      "description": "Disease 01 Description "
+INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES (N'{
+    "personalInfo": {
+      "fullName": "Ramsey Lang",
+      "nationality": 2499,
+      "birthDate": "1983-10-22T10:39:57 -03:00",
+      "pasportNumber": "A9782937",
+      "Gender": "male",
+      "BloodType": "B+",
+      "Address": "940 Metrotech Courtr, Taft, California, 6311"
     },
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 01",
-          "description": "02 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 02",
-          "description": "02 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 03",
-          "description": "02 Description 03"
-        }
-      ],
-      "name": "Disease 02",
-      "description": "Disease 02 Description "
-    }
-  ],
-  "emergancyConstacts": [
-    {
-      "type": "Father",
-      "fullName": " Booking.com",
-      "phone": "966545454200"
-    },
-    {
-      "type": "Sona",
-      "fullName": " aGODA.com",
-      "phone": "966778899500"
-    }
-  ]
-}', CAST(N'2018-08-01T21:53:50.743' AS DateTime), NULL)
+    "diseases": [
+      {
+        "medicines": ["DATAGENE","ENTROPIX"],
+        "name": "Disease 2",
+        "description": "Disease 1 is redoculas"
+      },
+      {
+        "medicines": ["DATAGENE","ENTROPIX"],
+        "name": "Disease 3",
+        "description": "Disease 8 is redoculas"
+      }
+    ],
+    "emergancyConstacts": [
+      {
+        "Type": "Child",
+        "fullName": "Oconnor Morgan",
+        "phone": "+966 (804) 437-2072"
+      },
+      {
+        "Type": "other",
+        "fullName": "Erica Brewer",
+        "phone": "+966 (914) 559-2331"
+      },
+      {
+        "Type": "Father",
+        "fullName": "Hernandez Cantrell",
+        "phone": "+966 (979) 549-3476"
+      }
+    ]
+  }', getdate(), NULL)
 GO
-INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) VALUES (2, N'{
-  "personalInfo": {
-    "fullName": "Ahmed Mohammed Sayed",
-    "nationality": "Egyptian",
-    "birthDate": "1986-12-12",
-    "pasportNumber":"A12344556",
-    "Gender":"Male",
-    "BloodType":"O+",
-    "Address":"Earth",
-  },
-  "diseases": [
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 01",
-          "description": "01 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 02",
-          "description": "01 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 03",
-          "description": "01 Description 03"
-        }
-      ],
-      "name": "Disease 01",
-      "description": "Disease 01 Description "
+INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES (N'{
+    "personalInfo": {
+      "fullName": "Cynthia Short",
+      "nationality": 6816,
+      "birthDate": "2012-08-19T04:34:12 -03:00",
+      "pasportNumber": "A6770059",
+      "Gender": "female",
+      "BloodType": "B+",
+      "Address": "184 Senator Street, Topaz, Connecticut, 9815"
     },
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 01",
-          "description": "02 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 02",
-          "description": "02 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 03",
-          "description": "02 Description 03"
-        }
-      ],
-      "name": "Disease 02",
-      "description": "Disease 02 Description "
-    }
-  ],
-  "emergancyConstacts": [
-    {
-      "type": "Father",
-      "fullName": " Booking.com",
-      "phone": "966545454200"
-    },
-    {
-      "type": "Sona",
-      "fullName": " aGODA.com",
-      "phone": "966778899500"
-    }
-  ]
-}', CAST(N'2018-08-01T21:54:24.330' AS DateTime), NULL)
-GO
-INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) VALUES (3, N'{
-  "personalInfo": {
-    "fullName": "Mosaad Ahmed Do",
-    "nationality": "Egyptian",
-    "birthDate": "1986-12-12",
-    "pasportNumber":"A12344556",
-    "Gender":"Male",
-    "BloodType":"O+",
-    "Address":"Earth",
-  },
-  "diseases": [
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 01",
-          "description": "01 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 02",
-          "description": "01 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "01 Medicine 03",
-          "description": "01 Description 03"
-        }
-      ],
-      "name": "Disease 01",
-      "description": "Disease 01 Description "
-    },
-    {
-      "medicines": [
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 01",
-          "description": "02 Description 01"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 02",
-          "description": "02 Description 02"
-        },
-        {
-          "activeIngredient": "Mosh 3arf",
-          "name": "02 Medicine 03",
-          "description": "02 Description 03"
-        }
-      ],
-      "name": "Disease 02",
-      "description": "Disease 02 Description "
-    }
-  ],
-  "emergancyConstacts": [
-    {
-      "type": "Father",
-      "fullName": " Booking.com",
-      "phone": "966545454200"
-    },
-    {
-      "type": "Sona",
-      "fullName": " aGODA.com",
-      "phone": "966778899500"
-    }
-  ]
-}', CAST(N'2018-08-01T21:54:58.860' AS DateTime), NULL)
-GO
-SET IDENTITY_INSERT [dbo].[MedicalRecords] OFF
+    "diseases": [
+      {
+        "medicines":["DATAGENE","ENTROPIX"],
+        "name": "Disease 6",
+        "description": "Disease 3 is redoculas"
+      },
+      {
+        "medicines":["DATAGENE","ENTROPIX"],
+        "name": "Disease 11",
+        "description": "Disease 5 is redoculas"
+      }
+    ],
+    "emergancyConstacts": [
+      {
+        "Type": "Doctor",
+        "fullName": "Singleton Gill",
+        "phone": "+966 (960) 483-3609"
+      },
+      {
+        "Type": "Father",
+        "fullName": "Darlene Stout",
+        "phone": "+966 (928) 409-3440"
+      },
+      {
+        "Type": "Brother",
+        "fullName": "Josefa Booker",
+        "phone": "+966 (897) 406-2029"
+      }
+    ]
+  }', GETDATE(), NULL)
 GO
