@@ -26,7 +26,7 @@ INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES ( N'{
         "description": "Disease 10 is redoculas"
       }
     ],
-    "emergancyConstacts": [
+    "emergancyContacts": [
       {
         "Type": "Brother",
         "fullName": "Sybil Flowers",
@@ -67,7 +67,7 @@ INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES (N'{
         "description": "Disease 8 is redoculas"
       }
     ],
-    "emergancyConstacts": [
+    "emergancyContacts": [
       {
         "Type": "Child",
         "fullName": "Oconnor Morgan",
@@ -108,7 +108,7 @@ INSERT [dbo].[MedicalRecords] ([Data], [Created], [Updated]) VALUES (N'{
         "description": "Disease 5 is redoculas"
       }
     ],
-    "emergancyConstacts": [
+    "emergancyContacts": [
       {
         "Type": "Doctor",
         "fullName": "Singleton Gill",
