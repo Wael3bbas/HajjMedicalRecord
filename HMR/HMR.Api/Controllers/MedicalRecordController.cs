@@ -26,5 +26,11 @@ namespace HMR.Api.Controllers
         {
             _medicalRecordBL.Create(data);
         }
+
+        [HttpPost("AddCase")]
+        public void AddCase(MedicalCaseCreateInput caseData)
+        {
+            _medicalRecordBL.AddCase(caseData.HajjId, caseData.To);
+        }
     }
 }
