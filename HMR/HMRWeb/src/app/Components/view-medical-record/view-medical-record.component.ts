@@ -13,16 +13,9 @@ export class ViewMedicalRecordComponent implements OnInit {
   patientId: number = 0;
   patient: ProfileDataModel = new ProfileDataModel();
 
-  cols: any[] = [
-
-    { field: 'name', header: 'Name' },
-    { field: 'description', header: 'Description' },
-    
-  ];
-
   ngOnInit() {
     this.patientId = 1;
-    this.medicalRecordService.ViewMedicalRecord(1).subscribe(
+    this.medicalRecordService.ViewMedicalRecord(7).subscribe(
       data => {
         this.patient = <ProfileDataModel>(data);
       },

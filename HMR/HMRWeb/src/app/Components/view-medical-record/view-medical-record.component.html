@@ -66,6 +66,9 @@
           <th>
             Description
           </th>
+          <th>
+            Medicines
+          </th>
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-rowData let-columns="columns">
@@ -76,11 +79,14 @@
           <td data-label="Description">
             {{ rowData["description"] }}
           </td>
+          <td data-label="Description">
+            {{ rowData["medicines"] }}
+          </td>
         </tr>
       </ng-template>
       <ng-template pTemplate="emptymessage" let-col>
         <tr>
-          <td style="text-align: center;" [attr.colspan]="col.length + 1">
+          <td style="text-align: center;" colspan="3">
             No Records
           </td>
         </tr>
@@ -89,7 +95,7 @@
 
     <hr class="mb-4">
     <h4 class="mb-3">Emergancy Contacts</h4>
-    <p-table [columns]="cols" [value]="patient.emergancyConstacts" [paginator]="false" [loading]="loading">
+    <p-table [columns]="cols" [value]="patient.emergancyContacts" [paginator]="false" [loading]="loading">
       <ng-template pTemplate="header" let-columns>
         <tr>
           <th style="width: 30%">
@@ -118,7 +124,7 @@
       </ng-template>
       <ng-template pTemplate="emptymessage" let-col>
         <tr>
-          <td style="text-align: center;" [attr.colspan]="col.length + 1">
+          <td style="text-align: center;" colspan="3">
             No Records
           </td>
         </tr>
@@ -126,7 +132,41 @@
     </p-table>
     <hr class="mb-4">
     <h4 class="mb-3">Medical Cases</h4>
-
+    <p-table [columns]="cols" [value]="patient.cases" [paginator]="false" [loading]="loading">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th style="width: 30%">
+            Type
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            MedicalProcedures
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+          <td data-label="Name">
+            {{ rowData["type"] }}
+          </td>
+          <td data-label="Description">
+            {{ rowData["fullName"] }}
+          </td>
+          <td data-label="MedicalProcedures">
+            {{ rowData["medicalProcedures"] }}
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="emptymessage" let-col>
+        <tr>
+          <td style="text-align: center;" colspan="3">
+            No Records
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
     <hr class="mb-4">
     <button class="btn btn-primary btn-lg btn-block" type="submit">Back</button>
   </form>
