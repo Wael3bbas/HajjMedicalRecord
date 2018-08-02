@@ -6,7 +6,11 @@ INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) 
   "personalInfo": {
     "fullName": "Kareem Uber Airbnb",
     "nationality": "British",
-    "birthDate": "1976-12-12T00:00:00"
+    "birthDate": "1976-12-12T00:00:00",
+    "pasportNumber":"A12344556",
+    "Gender":"Male",
+    "BloodType":"O+",
+    "Address":"Earth",
   },
   "diseases": [
     {
@@ -70,7 +74,11 @@ INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) 
   "personalInfo": {
     "fullName": "Ahmed Mohammed Sayed",
     "nationality": "Egyptian",
-    "birthDate": "1986-12-12"
+    "birthDate": "1986-12-12",
+    "pasportNumber":"A12344556",
+    "Gender":"Male",
+    "BloodType":"O+",
+    "Address":"Earth",
   },
   "diseases": [
     {
@@ -134,7 +142,11 @@ INSERT [dbo].[MedicalRecords] ([MedicalRecordId], [Data], [Created], [Updated]) 
   "personalInfo": {
     "fullName": "Mosaad Ahmed Do",
     "nationality": "Egyptian",
-    "birthDate": "1986-12-12"
+    "birthDate": "1986-12-12",
+    "pasportNumber":"A12344556",
+    "Gender":"Male",
+    "BloodType":"O+",
+    "Address":"Earth",
   },
   "diseases": [
     {

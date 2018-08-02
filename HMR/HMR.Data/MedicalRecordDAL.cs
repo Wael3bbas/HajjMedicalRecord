@@ -64,5 +64,19 @@ namespace HMR.Data
                  }
             };
         }
+        public void Create(ProfileData data)
+        {
+            var dataSerialized = JsonConvert.SerializeObject(data);
+            using (Connection)
+            {
+                const string sql = @"INSERT INTO [MedicalRecords] (Data, Created) VALUES (@Data, @Created)";
+                Connection.Execute(sql,
+                    new
+                    {
+                        Data = dataSerialized,
+                        Created = DateTime.Now
+                    });
+            }
+        }
     }
 }
