@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IncidentModel } from '../../Models/incident.model';
+import { IncidentService } from '../../Services/incident.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list-incident',
@@ -8,11 +10,24 @@ import { IncidentModel } from '../../Models/incident.model';
 })
 export class ListIncidentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private incidentService: IncidentService, private route: ActivatedRoute,
+    private router: Router) { }
 
   incidents: IncidentModel[] = [];
 
   ngOnInit() {
+    this.incidentService.ListIncidents().subscribe(
+      data => {
+        this.incidents = <IncidentModel[]>(data);
+      },
+      err => {
+
+      });
+  }
+
+  search(hajjId) {
+    this.router.navigate(['/View', hajjId]);
+
   }
 
 }

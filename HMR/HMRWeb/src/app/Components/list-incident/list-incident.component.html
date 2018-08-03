@@ -18,17 +18,17 @@
   </ng-template>
   <ng-template pTemplate="body" let-rowData let-columns="columns">
     <tr>
-      <td data-label="Hajj Id">
-        {{ rowData["hajjId"] }}
+      <td data-label="Hajj Id" style="width: 10%;">
+        {{ rowData["profileCode"] }}
       </td>
       <td data-label="Description">
         {{ rowData["description"] }}
       </td>
-      <td data-label="Location">
+      <td data-label="Location" style="width: 10%;">
         {{ rowData["location"] }}
       </td>
-      <td data-label=" View Records">
-        View Records
+      <td data-label=" View Records" style="width: 10%;">
+        <button type="button" class="btn btn-link" (click)="search(rowData['profileCode'])">View Records</button>
       </td>
     </tr>
   </ng-template>

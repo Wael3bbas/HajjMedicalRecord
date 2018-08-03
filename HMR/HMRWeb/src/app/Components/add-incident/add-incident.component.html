@@ -5,7 +5,13 @@
       <div class="col-md-6">
         <div class="form-group">
           <label>Hajj ID</label>
-          <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.HajjId">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.HajjId">
+            <div class="input-group-append">
+              <a class="btn btn-outline-secondary" routerLinkActive="active" (click)="scan()">Scan</a>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="col-md-6">
@@ -31,3 +37,11 @@
     </div>
   </form>
 </div>
+
+<p-dialog header="QR Read" [(visible)]="display" [width]="300">
+  <qr-scanner [debug]="false" [canvasWidth]="1080" [canvasHeight]="720" [stopAfterScan]="true" [updateTime]="500">
+  </qr-scanner>
+  <p-footer>
+
+  </p-footer>
+</p-dialog>

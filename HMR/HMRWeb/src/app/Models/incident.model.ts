@@ -1,5 +1,7 @@
 export class IncidentModel {
-    HajjId: string;
+    IncidentId: number;
+    ProfileCode: string;
     Description: string;
     Location: string;
+    Created: Date;
 }
