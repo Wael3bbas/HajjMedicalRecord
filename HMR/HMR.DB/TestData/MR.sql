@@ -86,7 +86,7 @@ INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALU
     ]
   }', getdate(), NULL)
 GO
-INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (4272, N'{
+INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (7897893, N'{
     "personalInfo": {
       "fullName": "Cynthia Short",
       "nationality": 6816,
