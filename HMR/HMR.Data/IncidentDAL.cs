@@ -37,7 +37,7 @@ namespace HMR.Data
                         ProfileCode = data.ProfileCode,
                         Description = data.Description,
                         Location = data.Location,
-                        Created = data.Created
+                        Created = DateTime.Now
                     });
             }
         }

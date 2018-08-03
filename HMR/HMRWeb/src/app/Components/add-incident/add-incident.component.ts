@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IncidentModel } from '../../Models/incident.model';
 import { NgQrScannerModule, QrScannerComponent } from 'angular2-qrscanner';
 import { DialogModule } from 'primeng/dialog';
+import { IncidentService } from '../../Services/incident.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +13,8 @@ import { DialogModule } from 'primeng/dialog';
 })
 export class AddIncidentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private incidentService: IncidentService, private route: ActivatedRoute,
+    private router: Router) { }
 
   selectedPosition: any;
 
@@ -60,6 +63,17 @@ export class AddIncidentComponent implements OnInit {
     });
   }
 
-  onSubmit(valid: boolean) { }
+  onSubmit(valid: boolean) {
+
+    this.incidentService.AddIncident(this.incident).subscribe(
+      data => {
+
+        this.router.navigate(['/Incidents']);
+      },
+      err => {
+
+      });
+
+  }
 
 }

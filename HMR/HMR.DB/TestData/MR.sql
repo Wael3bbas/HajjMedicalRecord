@@ -4,7 +4,7 @@ GO
 DELETE FROM [dbo].[MedicalRecords];
 Go
 
-INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (12345, N'{
+INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (775054, N'{
     "personalInfo": {
       "fullName": "Zimmerman Hunter",
       "nationality": 6303,
@@ -45,7 +45,7 @@ INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALU
     ]
   }', getdate(), NULL)
 GO
-INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (67890, N'{
+INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (8001533064536, N'{
     "personalInfo": {
       "fullName": "Ramsey Lang",
       "nationality": 2499,
@@ -86,7 +86,7 @@ INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALU
     ]
   }', getdate(), NULL)
 GO
-INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (54321, N'{
+INSERT [dbo].[MedicalRecords] ([ProfileCode], [Data], [Created], [Updated]) VALUES (4272, N'{
     "personalInfo": {
       "fullName": "Cynthia Short",
       "nationality": 6816,
