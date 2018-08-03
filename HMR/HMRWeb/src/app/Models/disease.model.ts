@@ -1,7 +1,7 @@
 ﻿import { MedicineModel } from "./medicine.model";
 
 export class DiseaseModel {
-    Name: string;
-    Description: string;
-    Medicines: MedicineModel[];
+    name: string;
+    description: string;
+    medicines: MedicineModel[];
 }

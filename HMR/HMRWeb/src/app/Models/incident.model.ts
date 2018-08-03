@@ -1,7 +1,7 @@
 export class IncidentModel {
-    IncidentId: number;
-    ProfileCode: string;
-    Description: string;
-    Location: string;
-    Created: Date;
+    incidentId: number;
+    profileCode: string;
+    description: string;
+    location: string;
+    created: Date;
 }

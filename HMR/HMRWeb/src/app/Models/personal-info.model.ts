@@ -1,10 +1,10 @@
 export class PersonalInfoModel {
-    FullName: string;
-    Nationality: string;
-    PasportNumber: string;
-    Gender: string;
-    Age: number;
-    BirthDate: Date;
-    BloodType: string;
-    Address: string;
+    fullName: string;
+    nationality: string;
+    pasportNumber: string;
+    gender: string;
+    age: number;
+    birthDate: Date;
+    bloodType: string;
+    address: string;
 }

@@ -14,6 +14,13 @@ export class ListIncidentComponent implements OnInit {
     private router: Router) { }
 
   incidents: IncidentModel[] = [];
+  display: boolean = false;
+  description: string = "";
+
+  closeDialog() {
+    this.display = false;
+    this.description = "";
+  }
 
   ngOnInit() {
     this.incidentService.ListIncidents().subscribe(
@@ -27,7 +34,11 @@ export class ListIncidentComponent implements OnInit {
 
   search(hajjId) {
     this.router.navigate(['/View', hajjId]);
+  }
 
+  more(desc: string) {
+    this.description = desc;
+    this.display = true;
   }
 
 }

@@ -24,10 +24,14 @@ export class AddIncidentComponent implements OnInit {
 
   }
 
+  closeDialog() {
+    this.display = false;
+  }
+
   scan() {
     this.display = true;
     this.qrScannerComponent.getMediaDevices().then(devices => {
-      console.log(devices);
+      //console.log(devices);
       const videoDevices: MediaDeviceInfo[] = [];
       for (const device of devices) {
         if (device.kind.toString() === 'videoinput') {
@@ -51,8 +55,11 @@ export class AddIncidentComponent implements OnInit {
     });
 
     this.qrScannerComponent.capturedQr.subscribe(result => {
-      console.log(result);
+      this.incident.profileCode = result.toString();
+      this.display = false;
     });
   }
+
+  onSubmit(valid: boolean) { }
 
 }

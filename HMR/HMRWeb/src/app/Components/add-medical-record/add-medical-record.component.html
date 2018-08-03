@@ -54,7 +54,7 @@
 
     <hr class="mb-4">
     <h4 class="mb-3">Diseases Information</h4>
-    <p-table [columns]="cols" [value]="patient.diseases" [paginator]="false" [loading]="loading">
+    <p-table [value]="patient.diseases" [paginator]="false">
       <ng-template pTemplate="header" let-columns>
         <tr>
           <th style="width: 30%">
@@ -92,7 +92,7 @@
 
     <hr class="mb-4">
     <h4 class="mb-3">Emergancy Contacts</h4>
-    <p-table [columns]="cols" [value]="patient.emergancyContacts" [paginator]="false" [loading]="loading">
+    <p-table [value]="patient.emergancyContacts" [paginator]="false" >
       <ng-template pTemplate="header" let-columns>
         <tr>
           <th style="width: 30%">
@@ -129,7 +129,7 @@
     </p-table>
     <hr class="mb-4">
     <h4 class="mb-3">Medical Cases</h4>
-    <p-table [columns]="cols" [value]="patient.cases" [paginator]="false" [loading]="loading">
+    <p-table [value]="patient.cases" [paginator]="false" >
       <ng-template pTemplate="header" let-columns>
         <tr>
           <th style="width: 30%">

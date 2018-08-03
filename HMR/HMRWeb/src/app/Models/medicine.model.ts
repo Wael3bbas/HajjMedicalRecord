@@ -1,5 +1,5 @@
 export class MedicineModel {
-    Name: string;
-    Description: string;
-    ActiveIngredient: string;
+    name: string;
+    description: string;
+    activeIngredient: string;
 }

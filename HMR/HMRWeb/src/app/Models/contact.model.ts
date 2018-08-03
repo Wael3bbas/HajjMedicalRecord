@@ -1,5 +1,5 @@
 export class ContactModel {
-    Type: string;
-    FullName: string;
-    Phone: string;
+    type: string;
+    fullName: string;
+    phone: string;
 }

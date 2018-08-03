@@ -1,12 +1,12 @@
 <h4 class="mb-3">New Incident</h4>
 <div>
-  <form class="needs-validation" #f="ngForm" (ngSubmit)="onSubmit(GeneralForm.valid)">
+  <form class="needs-validation" #f="ngForm" (ngSubmit)="onSubmit(f.valid)">
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
           <label>Hajj ID</label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.HajjId">
+            <input type="text" class="form-control" name="hajjId" #fullName="ngModel" [(ngModel)]="incident.profileCode">
             <div class="input-group-append">
               <a class="btn btn-outline-secondary" routerLinkActive="active" (click)="scan()">Scan</a>
             </div>
@@ -17,7 +17,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label>Location</label>
-          <input type="text" class="form-control" name="location" #nationality="ngModel" [(ngModel)]="incident.Location">
+          <input type="text" class="form-control" name="location" #nationality="ngModel" [(ngModel)]="incident.location">
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@
       <div class="col-md-12">
         <div class="form-group">
           <label>Description</label>
-          <textarea class="autoExpand forumPost form-control" name="description" #description="ngModel" [(ngModel)]="incident.Description"
+          <textarea class="autoExpand forumPost form-control" name="description" #description="ngModel" [(ngModel)]="incident.description"
             rows="4" data-min-rows="4" placeholder="Enter description here" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none; background: transparent !important;"></textarea>
         </div>
       </div>
@@ -38,10 +38,11 @@
   </form>
 </div>
 
-<p-dialog header="QR Read" [(visible)]="display" [width]="300">
-  <qr-scanner [debug]="false" [canvasWidth]="1080" [canvasHeight]="720" [stopAfterScan]="true" [updateTime]="500">
+<p-dialog header="QR Read" [(visible)]="display" [responsive]="true" [modal]="true" styleClass="sm-dialog">
+  <qr-scanner [debug]="false" [canvasWidth]="1080" [canvasHeight]="720" [stopAfterScan]="false" [updateTime]="500">
   </qr-scanner>
   <p-footer>
+    <button type="button" class="btn btn-primary" (click)="closeDialog()"> Close </button>
 
   </p-footer>
 </p-dialog>
